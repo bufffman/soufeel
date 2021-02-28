@@ -55,7 +55,7 @@
 			<div class="col title-catalog">Каталог</div>
 		</div>
 		<div class="row d-md-none" style="align-items: center; margin-bottom: 40px; margin-top: 4px;">
-			<div class="col-6 btn-filter">
+			<div class="col-3 btn-filter">
 				<button id="myBtn" style="display: flex; flex-wrap: wrap; flex-direction: column; border: none; background: none; gap: 3px;">
 					<span style="display:flex; gap: 3px; justify-content: space-between; align-items: center;">
 						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@
 		        </button>
 			</div>
 
-			<div class="col-6 d-flex" style="justify-content: flex-end; align-items: center;gap: 10px">
+			<div class="col-9 d-flex" style="justify-content: flex-end; align-items: center; gap: 10px">
 				<button style="width: 23px; height: 23px; background-color: #E0E0E0; border: none">
 				</button>
 
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 	  	<div class="row justify-content-between">
-	  		<div class="col-md-3 d-none d-md-block"> <!--  -->
+	  		<div class="col-md-3 d-none d-md-block">
 	  			<div class="row">
 	  				<div class="col" id="block_switch_gender">
 	  					<button class="col-lg-5 col-md-12 btn_switch_gender">Женщинам</button>
@@ -172,48 +172,49 @@
 
 			</div>
 
-			<div id="myModal" class="modal">
+			<div id="myModal">
 				<div class="modal-content">
-					<div class="row justify-content-between">
-						<div class="name-filter">Фильтр</div>
-						<div class="close" style="background-color: black; color: white; width: 24px; height: 24px; text-align: center; border-radius: 5px; opacity: 1;">&times;</div> <!-- &times; -->
+					<div class="modal-content-head">
+						<span class="name-filter">Фильтр</span>
+						<span class="close-modal"><i class="fa fa-times" aria-hidden="true"></i>
+						</span> <!-- &times; -->
 					</div>
 					<form>
-						<div class="row name-title-filter" style="">Сортировать по</div>
-						<div style="display: flex; flex-direction: column;">
+						<div class="name-title-filter">Сортировать по</div>
+						<div class="group-atribut">
 							<input type="radio" name="sort" class="check-radio" id="radio-1"><label for="radio-1">По популярности</label>
 							<input type="radio" name="sort" class="check-radio" id="radio-2"><label for="radio-2">Самое новое</label>
 							<input type="radio" name="sort" class="check-radio" id="radio-3"><label for="radio-3">Цена: высокая-низкая</label>
 							<input type="radio" name="sort" class="check-radio" id="radio-4"><label for="radio-4">Цена: низкая-высокая</label>
 						</div>
 						<hr>
-						<div class="row name-title-filter">Пол</div>
-						<div style="display: flex; flex-direction: column;">
+						<div class="name-title-filter">Пол</div>
+						<div class="group-atribut">
 							<input type="checkbox" name="gender" class="check-checkbox" id="gend-1"><label for="gend-1">Женщины</label>
 							<input type="checkbox" name="gender" class="check-checkbox" id="gend-2"><label for="gend-2">Мужчины</label>
 						</div>
 						<hr>
-						<div class="row name-title-filter">Категории</div>
-						<div style="display: flex; flex-direction: column;">
+						<div class="name-title-filter">Категории</div>
+						<div class="group-atribut">
 							<input type="checkbox" name="categor" class="check-checkbox" id="categ-1"><label for="categ-1">Спортивные костюмы</label>
 							<input type="checkbox" name="categor" class="check-checkbox" id="categ-2"><label for="categ-2">Худи</label>
 							<input type="checkbox" name="categor" class="check-checkbox" id="categ-3"><label for="categ-3">Лонгсливы</label>
 							<input type="checkbox" name="categor" class="check-checkbox" id="categ-4"><label for="categ-4">Свитшоты</label>
 						</div>
 						<hr>
-						<div class="row name-title-filter">Размер</div>
+						<div class="name-title-filter">Размер</div>
 							<div class="block_switch_size">
-								<button class="element_switch_size" class="check-checkbox">XXS</button>
-								<button class="element_switch_size" class="check-checkbox">XS</button>
-								<button class="element_switch_size" class="check-checkbox">S</button>
-								<button class="element_switch_size" class="check-checkbox">M</button>
-								<button class="element_switch_size" class="check-checkbox">L</button>
-								<button class="element_switch_size" class="check-checkbox">XL</button>
-								<button class="element_switch_size" class="check-checkbox">XXL</button>
-								<button class="element_switch_size" class="check-checkbox">XXXL</button>
+								<button class="element_switch_size">XXS</button>
+								<button class="element_switch_size">XS</button>
+								<button class="element_switch_size">S</button>
+								<button class="element_switch_size">M</button>
+								<button class="element_switch_size">L</button>
+								<button class="element_switch_size">XL</button>
+								<button class="element_switch_size">XXL</button>
+								<button class="element_switch_size">XXXL</button>
 							</div>
 						<hr>
-						<div class="row name-title-filter">Цена</div>
+						<div class="name-title-filter">Цена</div>
 							<div class="row">
 								<div class="col">
 									<div class="wrapper_slider_scroll">
@@ -222,7 +223,7 @@
 								</div>
 							</div>
 						<hr>
-						<div class="row name-title-filter">Цвет</div>
+						<div class="name-title-filter">Цвет</div>
 							<div class="block_switch_color">
 								<button class="element_switch_color" style="background-color: #ffffff;"></button>
 								<button class="element_switch_color" style="background-color: #000000;"></button>
@@ -311,31 +312,51 @@
 	<script src="js/nouislider.main.js"></script>
 	<script src="https://kit.fontawesome.com/985aaebe90.js" crossorigin="anonymous"></script>
 	<script> 
-		// Get the modal
-		var modal = document.getElementById('myModal');
+		// // Get the modal
+		// var modal = document.getElementById('myModal');
 
-		// Get the button that opens the modal
-		var btn = document.getElementById("myBtn");
+		// // Get the button that opens the modal
+		// var btn = document.getElementById("myBtn");
 
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		// // Get the <span> element that closes the modal
+		// var span = document.getElementsByClassName("close-modal")[0];
 
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
+		// // When the user clicks the button, open the modal 
+		// btn.onclick = function() {
+		// 	modal.style.display = "block";
+		// }
 
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
+		// // When the user clicks on <span> (x), close the modal
+		// span.onclick = function() {
+		// 	modal.style.display = "none";
+		// }
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
+		// // When the user clicks anywhere outside of the modal, close it
+		// window.onclick = function(event) {
+		// 	if (event.target == modal) {
+		// 		modal.style.display = "none";
+		// 	}
+		// }
+
+		let mybtn = document.getElementById('myBtn');
+		let closeModal = document.querySelector('.close-modal');
+
+		mybtn.addEventListener('click', function() {
+			document.getElementById('myModal').classList.add('showModal');
+		});
+
+		// closeModal.addEventListener('click', function() {
+		// 	document.getElementById('myModal').classList.remove('showModal');
+		// });
+
+		mybtn.addEventListener('click', function() {
+		 	document.getElementById('myModal').classList.remove('notShowModal');
+		 });
+
+		closeModal.addEventListener('click', function() {
+			document.getElementById('myModal').classList.add('notShowModal');
+		});
+		
 	</script>
 </body>
 </html>
